@@ -9,10 +9,14 @@ import React, { Component } from 'react'
 <label>
 coffee Name : </label>
 
-</label>
+<input type = 'text' value={this.props.coffeeName} onchange={this.props.updatelabelFunc}/>
+
+<label>
+coffee image : </label>
 
 
-
+<input type='text' value={this.props.coffeeimage}/>
+<input type='submit' value='update' onchange={this.props.updateImageFunc}/>
 
 </form>
 
